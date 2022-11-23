@@ -47,16 +47,13 @@ onMounted(() => {
 
 <template>
 
-  <main class ="app">
-
-    <section class="greeting">
-      <h2 class="title">
+    <div class= "max-w-6xl p-24">
+      <h1 class="text-3xl font-bold underline">
         What's up, <input type="text" placeholder="Name here" v-model="name" />
-      </h2>
-    </section>
+      </h1>
+    </div>
 
-    <section class="create-todo">
-      <h3>CREATE A TODO</h3>
+      <h2 class="text-3xl font-bold underline decoration-sky-500/30">CREATE A TODO</h2>
 
       <form @submit.prevent= "addTodo">
         <h4>What's on your todo list?</h4>
@@ -91,8 +88,6 @@ onMounted(() => {
 
       </form>
 
-    </section>
-
     <section class ="todo-list">
       <h3>TODO LIST</h3>
       <div class="list">
@@ -116,7 +111,7 @@ onMounted(() => {
 
       </div>
     </section>
-  </main>
+  
 
 </template>
 
